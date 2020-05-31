@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/w3css/3/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<body>
+
+<!-- Navigation -->
+<nav class="w3-bar w3-black">
+  <a href="#home" class="w3-button w3-bar-item">Home</a>
+  <a href="#band" class="w3-button w3-bar-item">Net Solutions</a>
+  <a href="#tour" class="w3-button w3-bar-item">Tour</a>
+ <a href="#contact" class="w3-button w3-bar-item">Contact</a>
+   <a href="#about" class="w3-button w3-bar-item">About Us</a>
+    <a href="#about" class="w3-button w3-bar-item"> Our Qualificaions</a>
+</nav>
+</nav>
+</nav>
+
+<div class="Danger">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  <strong>hello!</strong>welcome to Net Solutions.
+</div>
+
+<!-- Slide Show -->
+<section>
+ <!-- <img class="mySlides" src="img_band_la.jpg"
+  style="width:100%">
+ <img class="mySlides" src="img_band_ny.jpg"
+  style="width:100%">
+ <img class="mySlides" src="img_band_chicago.jpg"
+  style="width:100%">-->
+</section>
+
+<!-- Band Description -->
+<section class="w3-container w3-center w3-content" style="max-width:600px">
+  <h2 class="w3-wide">Net Solutions</h2>
+  <p class="w3-opacity"><i>Making your Life Simple</i></p>
+  <p class="w3-justify">The store consists of various computer hardware categories including hard-disks, monitors, Disk drives, keyboard, mouse,PC,macBook and other various hardware products. Users may browse for various categories of computer hardware. Then they may select desired products to their shopping cart</p>
+</section>
+
+<!-- Band Members -->
+<section class="w3-row-padding w3-center w3-light-blue">
+  <article class="w3-third">
+    <p>Vijay Singh</p>
+   <!-- <img src="img_bandmember.jpg" alt="Random Name" style="width:100%">-->
+    <p>,The Owner.</p>
+  </article>
+  <article class="w3-third">
+    <p>Firduas Hussauin is our head Manager.</p></p>
+    <!--<img src="img_bandmember.jpg" alt="Random Name" style="width:100%">-->
+    
+  </article>
+ 
+</section>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <a href="#"><i class="fa fa-facebook-official"></i></a>
+  <a href="#"><i class="fa fa-pinterest-p"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-flickr"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <p class="w3-medium">
+ <!-- Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>-->
+  </p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+    <p>Swing by for a cup of coffee, or leave us a message:</p>
+  </div>
+  <div class="row">
+    <div class="column">
+     <!--- <img src="/w3images/map.jpg" style="width:100%">-->
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+          <option value="usa">India</option>
+          <option value="usa">UK</option>
+          <option value="usa">Russia</option>
+          <option value="usa">China</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+        
+      </form>
+    </div>
+  </div>
+</div>
+<div class="about-section">
+  <h1>About Us Page</h1>
+  <p>Some text about who we are and what we do.</p>
+  <p>Resize the browser window to see that this page is responsive by the way.</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <!--<img src="/w3images/team1.jpg" alt="Jane" style="width:100%">-->
+      <div class="container">
+        <h2>Vijay kumar Singh</h2>
+        <p class="title">Owner</p>
+        <p>Expirenced Computer Hardware Engineer</p>
+        <p>netSolVijay@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+     <!---<img src="/w3images/team2.jpg" alt="Mike" style="width:100%">-->
+      <div class="container">
+        <h2>Firdaus Hussain</h2>
+        <p class="title">Head Manager</p>
+        <p>Experienced Manager well qualified manages our team </p>
+        <p>firdaus@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <!--<img src="/w3images/team3.jpg" alt="John" style="width:100%">-->
+      <div class="container">
+        <h2>Our team</h2>
+        <p class="title">Expirenced and Hard Working team</p>
+        <p>they are ready for servicing you at any point .</p>
+        <p>netsolutionteam@gmail.com </p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<?php
+echo "ok!";
+?> 
+</body>
+</html>
+
